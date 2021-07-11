@@ -7,7 +7,8 @@ function App(props) {
   const history = useHistory();
   const [usuario, setUsuario] = useState("");
 
-  function handlePesquisa() {
+  function handlePesquisa(e) {
+    e.preventDefault();
     axios
       .get(`https://api.github.com/users/${usuario}/repos`)
       .then((response) => {

@@ -14,11 +14,13 @@ export default function Repositories() {
   return (
     <S.Container>
       <S.Title>Repositórios</S.Title>
+      <S.LinkHome to="/">Voltar</S.LinkHome>
       <S.List>
         {repositories.map((repository) => {
           return <S.ListItem>{repository}</S.ListItem>;
         })}
       </S.List>
+      <S.LinkHome to="/">Voltar</S.LinkHome>
     </S.Container>
   );
 }
