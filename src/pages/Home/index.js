@@ -9,7 +9,18 @@ function App(props) {
   function handlePesquisa() {
     axios
       .get(`https://api.github.com/users/${usuario}/repos`)
-      .then((response) => console.log(response.data));
+      .then((response) => {
+        const repositories = response.data;
+        const repositoriesName = [];
+        // eslint-disable-next-line array-callback-return
+        repositories.map((repository) => {
+          repositoriesName.push(repository.name);
+        });
+        localStorage.setItem(
+          "repositoriesName",
+          JSON.stringify(repositoriesName)
+        );
+      });
   }
 
   return (
