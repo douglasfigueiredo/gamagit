@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import * as S from "./styled";
 import { useHistory } from "react-router-dom";
-import Title from "../../components/Title";
 
 export default function Repositories() {
   const history = useHistory();
@@ -19,7 +18,7 @@ export default function Repositories() {
 
   return (
     <S.Container>
-      <Title text="Repositórios" />
+      <S.Title>Repositórios</S.Title>
       <S.LinkHome to="/">Voltar</S.LinkHome>
       <S.List>
         {repositories.map((repository) => {
