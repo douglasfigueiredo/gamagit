@@ -3,6 +3,9 @@ import axios from "axios";
 import * as S from "./styled";
 import { useHistory } from "react-router-dom";
 
+import Title from "../../components/Title";
+import Subtitle from "../../components/Subtitle";
+
 function App(props) {
   const history = useHistory();
   const [usuario, setUsuario] = useState("");
@@ -33,6 +36,8 @@ function App(props) {
 
   return (
     <S.HomeContainer>
+      <Title text="Bem vindo(a) ao GAMAGIT!" />
+      <Subtitle text="Digite um usuário do Github para pesquisar seus repositórios." />
       <S.Content>
         <S.Input
           className="usuarioInput"
