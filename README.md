@@ -1,6 +1,6 @@
 ## Projeto utilizando ReactJS para o programa HiringCoders da VTex junto a Gama Academy.
 
-## GAMAGIT: é uma aplicação para pesquisar repositórios de usuários do Github.
+### GAMAGIT: é uma aplicação para pesquisar repositórios de usuários do Github.
 
 [Clique aqui](https://gamagit-blond.vercel.app/) para acessar o projeto online.
 
